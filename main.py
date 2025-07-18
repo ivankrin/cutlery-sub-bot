@@ -3,6 +3,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+print(f"BOT_TOKEN: {BOT_TOKEN}")
+
 CHANNEL_USERNAME = "@cutlery_guide"  # замени на название твоего канала
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
